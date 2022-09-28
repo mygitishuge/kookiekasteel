@@ -1,0 +1,248 @@
+@font-face {
+    font-family: tinos;
+    src: url(assets/Tinos-Italic.ttf);
+}
+
+* {
+    font-family: tinos;
+}
+
+header {
+    margin: auto;
+    /* width: 337px; */
+    width: 95%;
+    height: 118px;
+    background-color: #F2C2C2;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.hamburger {
+    width: 20px;
+    height: 20px;
+    /* background-color: #F8F483; */
+    position: absolute;
+    left: 85%;
+    top: 15%;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 54px;
+    }
+
+    .hamburger {
+        width: 80px;
+        height: 80px;
+        left: 82%;
+    }
+}
+/*
+            END OF HEADER SECTION
+*/
+
+
+
+main {
+    padding-bottom: 20px;
+}
+
+main h2 {
+    font-weight: 300;
+}
+
+.card-carousel {
+    margin: auto;
+    /* width: 337px; */
+    width: 95%;
+    /* height: 285px; */
+    /* padding: 10px auto; */
+    background-color: #F2C2C2;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.title-mini {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.row-cont {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-cont {
+    align-self: center;
+    width: 21px;
+    height: 18px;
+}
+
+.carousel {
+    display: flex;
+    /* width: 300%; */
+    width: 82.79%;
+    height: 199px;
+    /* height: 100%; */
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    /* transition-duration: 0.5s; */
+}
+
+
+.pos-1 {
+    transform: translateX(-33.33%);
+}
+
+.pos-2 {
+    transform: translateX(-66.66%)
+}
+
+
+
+.carousel-item-cont {
+    width: 300%;
+    /* width: 837px; */
+    height: auto;
+    position: relative;
+    /* top: 30px; */
+    margin: auto;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.carousel-item {
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    bottom: 0%;
+    z-index: 3;
+}
+
+.card-display-text {
+    margin: auto;
+    /* width: 337px; */
+    width: 95%;
+    /* height: 285px; */
+    background-color: #F8F483;
+    border-radius: 15px;
+}
+
+.content-dt {
+    text-align: center;
+    padding: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+    .card-carousel {
+        width: 95%;
+    }
+
+    .title-mini {
+        font-size: 32px;
+        padding-top: 7%;
+    }
+
+    .carousel {
+        height: 70vh;
+    }
+
+    .carousel-item-cont {
+        height: auto;
+    }
+
+    .card-display-text {
+        margin: auto;
+        width: 95%;
+    }
+
+    .content-dt {
+        font-size: 22px;
+    }
+}
+/* 
+            END OF MAIN SECTION
+*/
+
+
+
+
+footer {
+    /* padding-top: 13px; */
+    margin-top: 10px;
+    margin: auto;
+    /* width: 337px; */
+    width: 95%;
+    height: 164px;
+    background-color: #F8F483;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-left: 10%;
+    font-weight: 400;
+}
+
+footer h3 {
+    margin: 7px;
+    margin-left: 10%;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 0%;
+    
+    /* font-style: italic; */
+}
+@media only screen and (min-width: 600px) {
+    footer {
+        margin-top: 4%;
+        height: 50vh;
+    }
+    
+    footer h2 {
+        font-size: 32px;
+    }
+    
+    footer h3 {
+        margin: 2%;
+        margin-left: 10%;
+        font-size: 22px;
+        font-weight: 100;
+    }
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("assets/blueSpiralBG.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
